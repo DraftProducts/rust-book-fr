@@ -35,6 +35,7 @@ backtraces
 BACKTRACE
 Backtraces
 Baz's
+beefeb
 benchmarking
 bioinformatics
 bitand
@@ -58,8 +59,11 @@ Bors
 BorrowMutError
 BoxMeUp
 BTreeSet
+BufRead
+BufReader
 BuildHasher
 Cacher
+cacher
 Cagain
 callsite
 CamelCase
@@ -80,6 +84,7 @@ combinator
 ConcreteType
 config
 Config
+confignew
 const
 consts
 constant's
@@ -119,6 +124,7 @@ dereferences
 dereferencing
 DerefMut
 DeriveInput
+Dest
 destructor
 destructure
 destructured
@@ -127,6 +133,7 @@ destructuring
 Destructuring
 deterministically
 DevOps
+devtools
 didn
 Dobrý
 doccargo
@@ -155,6 +162,7 @@ Erlang
 ErrorKind
 eval
 executables
+ExitCode
 expr
 extern
 favicon
@@ -169,6 +177,7 @@ filesystem
 Filesystem
 filesystem's
 filesystems
+filmmaking
 Firefox
 FnMut
 FnOnce
@@ -208,6 +217,7 @@ Hoare
 Hola
 homogenous
 html
+http
 https
 hyperoptimize
 hypotheticals
@@ -344,6 +354,7 @@ OsString
 other's
 otherinstall
 OtherError
+OurError
 OutlinePrint
 overloadable
 overread
@@ -373,6 +384,7 @@ println
 priv
 proc
 proto
+pseudocode
 pthreads
 pushups
 QuitMessage
@@ -429,6 +441,7 @@ SelectBox
 semver
 SemVer
 serde
+ShirtColor
 ShlAssign
 ShrAssign
 shouldn
@@ -473,8 +486,10 @@ subdirectory
 submodule
 submodules
 Submodules
+submodule’s
 suboptimal
 subpath
+subslices
 substring
 subteams
 subtree
@@ -490,6 +505,7 @@ TextField
 That'd
 there'd
 ThreadPool
+threadpool
 timestamp
 Tiếng
 timeline
@@ -523,6 +539,7 @@ uncommenting
 unevaluated
 Uninstalling
 uninstall
+unittests
 unix
 unpopulated
 unoptimized
@@ -530,6 +547,8 @@ UnsafeCell
 unsafety
 unsized
 unsynchronized
+Unyank
+UpperCamelCase
 URIs
 UsefulType
 username

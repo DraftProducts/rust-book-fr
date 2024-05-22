@@ -10,7 +10,7 @@ pub struct Guess {
 impl Guess {
     pub fn new(value: i32) -> Guess {
         if value < 1 || value > 100 {
-            panic!("Guess value must be between 1 and 100, got {}.", value);
+            panic!("Guess value must be between 1 and 100, got {value}.");
         }
 
         Guess { value }
@@ -25,7 +25,7 @@ impl Guess {
 fn main() {
     println!("Guess the number!");
 
-    let secret_number = rand::thread_rng().gen_range(1..101);
+    let secret_number = rand::thread_rng().gen_range(1..=100);
 
     loop {
         println!("Please input your guess.");

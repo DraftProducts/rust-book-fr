@@ -2,6 +2,29 @@
 
 We'd love your help! Thanks for caring about the book.
 
+## Where to Edit
+
+All edits should be made in the `src` directory.
+
+The `nostarch` directory contains snapshots for sending edits to the publishers
+of the print version. The snapshot files reflect what has been sent or not, so
+they only get updated when edits are sent to No Starch. **Do not submit pull
+requests changing files in the `nostarch` directory, they will be closed.**
+
+## Checking for Fixes
+
+The book rides the Rust release trains. Therefore, if you see a problem on
+https://doc.rust-lang.org/stable/book, it may already be fixed on the `main`
+branch in this repo, but the fix hasn't gone through nightly -> beta -> stable
+yet. Please check the `main` branch in this repo before reporting an issue.
+
+Looking at the history for a particular file can also give more information on
+how or whether an issue has been fixed or not if you're trying to figure that
+out.
+
+Please also search open and closed issues and open and closed PRs before
+reporting a new issue or opening a new PR.
+
 ## Licensing
 
 This repository is under the same license as Rust itself, MIT/Apache2. You
@@ -15,10 +38,12 @@ that governs all sub-projects, including this one. Please respect it!
 
 ## Expectations
 
-Because the book is [printed](https://nostarch.com/rust), and because we want
+Because the book is [printed][nostarch], and because we want
 to keep the online version of the book close to the print version when
 possible, it may take longer than you're used to for us to address your issue
 or pull request.
+
+[nostarch]: https://nostarch.com/rust-programming-language-2nd-edition
 
 So far, we've been doing a larger revision to coincide with [Rust
 Editions](https://doc.rust-lang.org/edition-guide/). Between those larger
@@ -45,4 +70,4 @@ a new language! We're waiting on [mdbook support] for multiple languages
 before we merge any in, but feel free to start!
 
 [Translations]: https://github.com/rust-lang/book/issues?q=is%3Aopen+is%3Aissue+label%3ATranslations
-[mdbook support]: https://github.com/rust-lang-nursery/mdBook/issues/5
+[mdbook support]: https://github.com/rust-lang/mdBook/issues/5

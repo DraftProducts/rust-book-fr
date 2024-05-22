@@ -18,10 +18,10 @@ If you want different behavior from that provided by the `derive` attribute,
 consult the [standard library documentation](../std/index.html)<!-- ignore -->
 for each trait for details of how to manually implement them.
 
-The rest of the traits defined in the standard library can’t be implemented on
-your types using `derive`. These traits don’t have sensible default behavior,
-so it’s up to you to implement them in the way that makes sense for what you’re
-trying to accomplish.
+These traits listed here are the only ones defined by the standard library that
+can be implemented on your types using `derive`. Other traits defined in the
+standard library don’t have sensible default behavior, so it’s up to you to
+implement them in the way that makes sense for what you’re trying to accomplish.
 
 An example of a trait that can’t be derived is `Display`, which handles
 formatting for end users. You should always consider the appropriate way to
@@ -45,7 +45,7 @@ The `Debug` trait allows you to print instances of a type for debugging
 purposes, so you and other programmers using your type can inspect an instance
 at a particular point in a program’s execution.
 
-The `Debug` trait is required, for example, in use of the `assert_eq!` macro.
+The `Debug` trait is required, for example, in using the `assert_eq!` macro.
 This macro prints the values of instances given as arguments if the equality
 assertion fails so programmers can see why the two instances weren’t equal.
 

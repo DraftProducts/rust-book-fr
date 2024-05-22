@@ -17,7 +17,7 @@ overload that operator is listed.
 |----------|---------|-------------|---------------|
 | `!` | `ident!(...)`, `ident!{...}`, `ident![...]` | Macro expansion | |
 | `!` | `!expr` | Bitwise or logical complement | `Not` |
-| `!=` | `var != expr` | Nonequality comparison | `PartialEq` |
+| `!=` | `expr != expr` | Nonequality comparison | `PartialEq` |
 | `%` | `expr % expr` | Arithmetic remainder | `Rem` |
 | `%=` | `var %= expr` | Arithmetic remainder and assignment | `RemAssign` |
 | `&` | `&expr`, `&mut expr` | Borrow | |
@@ -72,8 +72,8 @@ overload that operator is listed.
 
 ### Non-operator Symbols
 
-The following list contains all non-letters that don’t function as operators;
-that is, they don’t behave like a function or method call.
+The following list contains all symbols that don’t function as operators; that
+is, they don’t behave like a function or method call.
 
 Table B-2 shows symbols that appear on their own and are valid in a variety of
 locations.
@@ -86,7 +86,7 @@ locations.
 | `...u8`, `...i32`, `...f64`, `...usize`, etc. | Numeric literal of specific type |
 | `"..."` | String literal |
 | `r"..."`, `r#"..."#`, `r##"..."##`, etc. | Raw string literal, escape characters not processed |
-| `b"..."` | Byte string literal; constructs a `[u8]` instead of a string |
+| `b"..."` | Byte string literal; constructs an array of bytes instead of a string |
 | `br"..."`, `br#"..."#`, `br##"..."##`, etc. | Raw byte string literal, combination of raw and byte string literal |
 | `'...'` | Character literal |
 | `b'...'` | ASCII byte literal |
@@ -103,7 +103,7 @@ hierarchy to an item.
 |--------|-------------|
 | `ident::ident` | Namespace path |
 | `::path` | Path relative to the crate root (i.e., an explicitly absolute path) |
-| `self::path` | Path relative to the current module (i.e., an explicitly relative path).
+| `self::path` | Path relative to the current module (i.e., an explicitly relative path). |
 | `super::path` | Path relative to the parent of the current module |
 | `type::ident`, `<type as trait>::ident` | Associated constants, functions, and types |
 | `<type>::...` | Associated item for a type that cannot be directly named (e.g., `<&T>::...`, `<[T]>::...`, etc.) |
